@@ -67,7 +67,7 @@ timesNew=find(~isnan(diffNew));
 artifactNew = diffNew(timesNew)-lfpreg([timesNew,diffNew(timesNew)],Period,2);
 [timesNew,I] = sort(mod(timesNew,Period));
 artifactNew = artifactNew(I);
-%load('cmap')
+load('cmap')
 figure
 subplot(1,2,1)
 hold on
